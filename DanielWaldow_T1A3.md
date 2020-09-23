@@ -72,7 +72,7 @@ Usage:
   - Displays Highscores as a table including: Name, score, number of wins/draws, and most picked faction
   - User is given 2 options: Start New Game or Exit to menu
 - Exit:
-  - Include are you sure check before exiting? with Y/N
+  - Inlcude are you sure check before exiting? with Y/N
 - TTY Prompt (on selection before pressing 'Enter', tooltip-style help will be displayed)
 
 <br>
