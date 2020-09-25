@@ -81,7 +81,7 @@ Usage:
 
 <br>
 
-![App Flowchart](../docs/img/flowcharts/app-game-overview-flowcharts_white.png)
+![App Flowchart](docs/img/flowcharts/app-game-overview-flowcharts_white.png)
 
 - show the workflow/logic and/or integration of the features in your application for each feature.
 - utilise a recognised format or set of conventions for a control flow diagram, such as UML.

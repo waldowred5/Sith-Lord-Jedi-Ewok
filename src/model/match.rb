@@ -37,11 +37,10 @@ class Match
 end
 
 
-# p game1 = Match.new
-# puts "Please choose: 0 = Sith, 1 = Jedi, 2 = Ewok"
-# game1.player_input = gets.chomp.to_i
-# p game1
-# game1.player_selection = game1.selections(game1.player_input)
-# p game1
-# puts game1.determine_result
-# p game1
+p game1 = Match.new
+puts "Please choose: 0 = Sith, 1 = Jedi, 2 = Ewok"
+game1.player_input = gets.chomp.to_i
+game1.player_selection = game1.selections(game1.player_input)
+puts game1.determine_result
+game1.save!
+p Match::MATCHES
