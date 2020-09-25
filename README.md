@@ -72,7 +72,7 @@ Usage:
   - Displays Highscores as a table including: Name, score, number of wins/draws, and most picked faction
   - User is given 2 options: Start New Game or Exit to menu
 - Exit:
-  - Inlcude are you sure check before exiting? with Y/N
+  - Include are you sure check before exiting? with Y/N
 - TTY Prompt (on selection before pressing 'Enter', tooltip-style help will be displayed)
 
 <br>
@@ -80,6 +80,8 @@ Usage:
 ### **R8 - Control Flow:**
 
 <br>
+
+![App Flowchart](../docs/img/flowcharts/app-game-overview-flowcharts_white.png)
 
 - show the workflow/logic and/or integration of the features in your application for each feature.
 - utilise a recognised format or set of conventions for a control flow diagram, such as UML.
