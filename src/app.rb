@@ -6,4 +6,4 @@ begin
     puts 'Options: (play, rules, highscores, exit):'
     input = gets.chomp.downcase.strip
     dispatch input
-end until ['exit'].include? command
+end until ['exit123'].include? input

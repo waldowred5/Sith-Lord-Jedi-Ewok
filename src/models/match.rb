@@ -22,11 +22,11 @@ class Match
         math_check = @player_input - @ai_input
         case math_check
         when 0
-            @result = 'draw'
+            @result = 'drew'
         when 1, -2
-            @result = 'win'
+            @result = 'won!'
         when -1, 2
-            @result = 'loss'
+            @result = 'lost'
         end
     end
 
