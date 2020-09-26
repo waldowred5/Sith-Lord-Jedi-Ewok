@@ -1,5 +1,5 @@
-class Match
-    MATCHES = []
+class Round
+    ROUNDS = []
 
     attr_reader :id, :ai_input
     attr_accessor :player_input, :player_selection, :ai_selection, :result 
@@ -31,16 +31,16 @@ class Match
     end
 
     def save!
-        @id = MATCHES.length + 1
-        MATCHES << self
+        @id = ROUNDS.length + 1
+        ROUNDS << self
     end
 end
 
 
-# p game1 = Match.new
+# p game1 = Round.new
 # puts "Please choose: 0 = Sith, 1 = Jedi, 2 = Ewok"
 # game1.player_input = gets.chomp.to_i
 # game1.player_selection = game1.selections(game1.player_input)
 # puts game1.determine_result
 # game1.save!
-# p Match::MATCHES
+# p Round::ROUNDS

@@ -1,16 +1,19 @@
+require_relative 'controllers/rounds_controller.rb'
 require_relative 'controllers/games_controller.rb'
 require_relative 'views/rules_view.rb'
 require_relative 'views/exit_view.rb'
+require_relative 'views/highscores_view.rb'
 
 def dispatch(cmd)
   case cmd
   when 'play'
+    ::RoundsController.new
     ::GamesController.new
   when 'rules'
-    ::RulesView.display
+    ::RulesView.show
   when 'highscores'
-    # ::RecipesController.new
+    ::HighscoresView.show
   when 'exit'
-    ::ExitView.display
+    ::ExitView.show
   end
 end

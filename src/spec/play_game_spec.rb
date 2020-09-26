@@ -1,6 +1,6 @@
-require_relative '../match'
+require_relative '../round'
 
-describe Match do
+describe Round do
     it 'should return correct selection from array based on supplied index' do
         expect(subject.selections(0)).to eq 'sith'
         expect(subject.selections(1)).to eq 'jedi'
