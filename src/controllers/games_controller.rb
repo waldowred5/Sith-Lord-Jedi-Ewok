@@ -37,8 +37,17 @@ module GamesController
         player_name_input = gets.chomp.strip
         new_game = Game.new
         new_game.player_name = player_name_input
-        new_game.score = ::Match::MATCHES.length - 1
+        # new_game.score = ::Match::MATCHES.length - 1
+        new_game.wins = Match::MATCHES.count {|x| x.result == 'won!'} 
+        puts new_game.wins
+        new_game.draws = Match::MATCHES.count {|x| x.result == 'drew'} 
+        puts new_game.draws
+        new_game.score = new_game.wins * 100 + new_game.draws * 25
         puts "Thanks for playing, #{new_game.player_name}, your score was #{new_game.score}\n\n"
+        puts "\nWhat would you like to do?\nOptions: play, menu"
+        input = gets.chomp.downcase.strip
+        input == 'menu' ? input : ::GamesController.new
+        puts ""
     end
 
     module_function :new
