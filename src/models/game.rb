@@ -4,7 +4,7 @@ class Game
         @wins = 0
         @draws = 0
         @score = 0
-        @date = #Today's Date
-        @time = #current time
+        @date = nil #Today's Date
+        @time = nil #current time
     end
 end
