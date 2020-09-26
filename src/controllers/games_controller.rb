@@ -15,7 +15,6 @@ module GamesController
             puts "\nWhat is your name?"
             player_name_input = gets.chomp.strip
             new_game.player_name = player_name_input
-            # new_game.score = ::Round::ROUNDS.length - 1
             new_game.wins = Round::ROUNDS.count {|x| x.result == 'won!'} 
             puts new_game.wins
             new_game.draws = Round::ROUNDS.count {|x| x.result == 'drew'} 

@@ -1,8 +1,8 @@
-require_relative 'controllers/rounds_controller.rb'
-require_relative 'controllers/games_controller.rb'
-require_relative 'views/rules_view.rb'
-require_relative 'views/exit_view.rb'
-require_relative 'views/highscores_view.rb'
+require_relative 'controllers/rounds_controller'
+require_relative 'controllers/games_controller'
+require_relative 'views/rules_view'
+require_relative 'views/exit_view'
+require_relative 'views/highscores_view'
 
 def dispatch(cmd)
   case cmd

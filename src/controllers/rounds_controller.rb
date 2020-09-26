@@ -1,6 +1,6 @@
 require_relative '../models/round'
 require_relative '../models/game'
-require_relative '../views/rounds_view'
+# require_relative '../views/rounds_view'
 
 
 # instantiate Game

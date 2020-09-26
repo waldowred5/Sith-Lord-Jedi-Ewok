@@ -1,3 +1,5 @@
+# require_relative '../controllers/options_controller'
+
 module RulesView
     def show
         puts "\nRules:"
@@ -8,13 +10,12 @@ module RulesView
         puts "The round results for each faction are as follows:"
         puts "- Sith enslaves Ewok"
         puts "- Ewok recruits Jedi"
-        puts "- Jedi overpowers Sith\n"
-        puts "Scoring:"
-        puts "Every winning round scores 100 points and every draw scores 25 points\n"
-        puts "\nWhat would you like to do?\nOptions: play, menu"
-        input = gets.chomp.downcase.strip
-        input == 'menu' ? input : ::GamesController.new
-        puts ""
+        puts "- Jedi overpowers Sith"
+        puts "\nScoring:"
+        puts "Every winning round scores 100 points and every draw scores 25 points\n\n"
+        # puts "\nWhat would you like to do?\nOptions: play, menu"
+        # input = gets.chomp.downcase.strip
+        # input == 'menu' ? input : ::Dispatch.dispatch('play')
     end
 
     module_function :show
