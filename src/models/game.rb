@@ -14,7 +14,7 @@ class Game
     end
 
     def self.all
-        GAMES
+        GAMES # <-- Clone/Dup this?
     end
 
     def save!

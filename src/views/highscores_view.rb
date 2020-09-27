@@ -1,7 +1,7 @@
 require 'tty-table'
 
 module HighscoresView
-    def show(games:)
+    def show(games:) # <-- why does this not mutate the original GAMES array?
         puts "\nHighscores:\n"
         return puts 'No highscores to show!' if games.empty?
         headers = %w[Player Score]
