@@ -39,5 +39,12 @@ module AppController
         ::ExitView.show
     end
 
+    # def play_or_menu
+    #     prompt = TTY::Prompt.new
+    #     prompt_options = %w(Start\ New\ Game Exit\ to\ Menu)
+    #     choice = prompt.select("What would you like to do?", prompt_options)
+    #     choice == 'Exit to Menu' ? choice : ::AppController.play_game
+    # end
+
     module_function :play_game, :show_highscores, :show_rules, :exit?
 end

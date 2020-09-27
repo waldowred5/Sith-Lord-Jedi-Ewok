@@ -1,10 +1,9 @@
 module ExitView
     def show
         system('clear')
-        puts "\nAre you sure you want to exit?\n"
-        exit_input = gets.chomp.downcase.strip
-        exit_input == 'y' ? exit : exit_input
-        puts ""
+        exit_input = TTY::Prompt.new
+        to_exit = exit_input.select("Are you sure you want to exit?", %w(Yes No))
+        to_exit == 'Yes' ? exit : to_exit
     end
 
     module_function :show
