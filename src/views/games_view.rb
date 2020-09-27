@@ -8,11 +8,8 @@ module GamesView
         system('clear')
         puts "\nThanks for playing, #{game.player_name}, your score was #{game.score}\n\n"
         game.save!
-        sleep(2)
         puts "Your score was saved to Highscores"
         ::Round::ROUNDS.clear
-        sleep(2)
-        puts "\nWhat would you like to do?\nOptions: play, menu\n\n"
     end
 
     module_function :new
