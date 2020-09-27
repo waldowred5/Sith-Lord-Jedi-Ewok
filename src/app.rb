@@ -5,6 +5,7 @@ require_relative 'dispatch'
 
 loop do
     system('clear')
+    puts "Git push from Mac test 1234"
     puts "Welcome to...".colorize(:light_yellow)
     art = Artii::Base.new :font => 'slant'
     puts art.asciify("Sith - Lord  Jedi  Ewok").colorize(:light_yellow).bold
