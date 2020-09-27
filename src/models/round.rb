@@ -14,7 +14,7 @@ class Round
     end
 
     def selections(choice)
-        select_from = ['sith', 'jedi', 'ewok']
+        select_from = ['Sith'.colorize(:light_red), 'Jedi'.colorize(:light_cyan), 'Ewok'.colorize(:light_green)]
         select_from[choice]
     end
 

@@ -36,7 +36,7 @@ module AppController
         # next_prompt = TTY::Prompt.new.keypress("\nPress any key to continue")
         # system('clear')
         choice = ::OptionsView.show
-        choice == 'Exit to Menu' ? choice : ::AppController.play_game
+        choice == false ? choice : ::AppController.play_game
     end
 
     def exit?

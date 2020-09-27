@@ -2,13 +2,13 @@ require_relative 'controllers/app_controller'
 
 def dispatch(cmd)
   case cmd
-  when 'Play Game'
+  when 0
     ::AppController.play_game
-  when 'Read Rules'
+  when 1
     ::AppController.show_rules
-  when 'See Highscores'
+  when 2
     ::AppController.show_highscores
-  when 'Exit'
+  when 3
     ::AppController.exit?
   end
 end
