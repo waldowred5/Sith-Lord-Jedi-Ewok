@@ -13,6 +13,10 @@ class Game
         @time = nil #current time
     end
 
+    def self.all
+        GAMES
+    end
+
     def save!
         @id = GAMES.length + 1
         GAMES << self
