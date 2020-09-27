@@ -35,12 +35,16 @@ Usage:
 
 <br>
 
+Top 3:
 - Computer Player (AI):
   - a
-- Highscore Leaderboard:
+- Leaderboard:
   - a
 - Show Rules:
   - a
+
+All Features:
+- a
 
 <br>
 

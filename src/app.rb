@@ -7,7 +7,7 @@ loop do
     system('clear')
     puts "Welcome to...".colorize(:light_yellow)
     art = Artii::Base.new :font => 'slant'
-    puts art.asciify("Sith-lord Jedi Ewok").colorize(:light_yellow).bold
+    puts art.asciify("Sith - Lord  Jedi  Ewok").colorize(:light_yellow).bold
     choice = TTY::Prompt.new.select("What would you like to do?".colorize(:light_yellow), help_color: :bright_magenta) do |menu|
         menu.choice "Play Game".colorize(:light_green), 0
         menu.choice "Read Rules".colorize(:light_yellow), 1

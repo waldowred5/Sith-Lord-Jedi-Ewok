@@ -1,5 +1,6 @@
 require_relative '../models/round'
 require_relative '../models/game'
+# require_relative '../models/quote_generator'
 require_relative '../views/rounds_view'
 require_relative '../views/games_view'
 require_relative '../views/highscores_view'
@@ -33,8 +34,6 @@ module AppController
     end
 
     def play_or_menu
-        # next_prompt = TTY::Prompt.new.keypress("\nPress any key to continue")
-        # system('clear')
         choice = ::OptionsView.show
         choice == false ? choice : ::AppController.play_game
     end

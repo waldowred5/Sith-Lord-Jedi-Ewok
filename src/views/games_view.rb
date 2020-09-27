@@ -11,7 +11,7 @@ module GamesView
         system('clear')
         puts "\nThanks for playing, #{game.player_name}, your score was #{game.score}\n".colorize(:light_yellow)
         game.save!
-        puts "Your score was saved successfully to the Leaderboard".colorize(:grey)
+        puts "Your score was saved successfully to the Leaderboard!".colorize(:light_yellow)
         ::Round::ROUNDS.clear
     end
 

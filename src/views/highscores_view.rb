@@ -1,4 +1,5 @@
 require 'tty-table'
+# require_relative '../models/quote_generator'
 
 module HighscoresView
     def show(games:) # <-- why does this not mutate the original GAMES array?
@@ -10,6 +11,7 @@ module HighscoresView
         rows = build_rows(games).sort_by{|ary|ary[1]}.reverse
         highscores = TTY::Table.new(header: headers, rows: rows)
         puts highscores.render :unicode, alignments: [:left, :right]
+        # puts "\n#{::QuoteGenerator.new.choose_quote}"
     end
 
     def self.build_rows(games)
