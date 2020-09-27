@@ -1,14 +1,17 @@
 module GamesView
     def new(game:)
         puts "\nWhat is your name?"
-        player_name_input = gets.chomp.strip
-        game.player_name = player_name_input
+        game.player_name = gets.chomp.strip
         game.wins = Round::ROUNDS.count {|x| x.result == 'won!'} 
         game.draws = Round::ROUNDS.count {|x| x.result == 'drew'} 
         game.score = game.wins * 100 + game.draws * 25
-        puts "Thanks for playing, #{game.player_name}, your score was #{game.score}\n\n"
+        system('clear')
+        puts "\nThanks for playing, #{game.player_name}, your score was #{game.score}\n\n"
         game.save!
+        sleep(2)
+        puts "Your score was saved to Highscores"
         ::Round::ROUNDS.clear
+        sleep(2)
         puts "\nWhat would you like to do?\nOptions: play, menu\n\n"
     end
 

@@ -1,5 +1,7 @@
 module RoundsView
-    def new(round:)
+    def new(round:, round_number:)
+        system('clear')
+        puts "Round: #{round_number}"
         puts "\nPlease choose your desired faction:"
         puts "Options: | Sith | Jedi | Ewok |"
         player_string = gets.chomp.strip.downcase
@@ -12,10 +14,15 @@ module RoundsView
             round.player_input = 2
         end
         round.player_selection = round.selections(round.player_input)
-        puts "You chose: #{round.player_selection}"
+        puts "\nYou chose: #{round.player_selection}"
+        sleep(0.5)
         puts "Your opponent chose: #{round.ai_selection}"
-        puts "You #{round.determine_result}"
+        sleep(1)
+        puts "\nYou #{round.determine_result}"
+        sleep(1)
         round.save!
+        puts round.determine_result == 'lost' ? 'Round saved' : "Round saved, loading new round..."
+        sleep(2)
     end
 
     module_function :new

@@ -11,7 +11,8 @@ module AppController
         begin
             begin
                 new_round = Round.new
-                ::RoundsView.new round: new_round
+                round_number = ::Round::ROUNDS.length + 1
+                ::RoundsView.new round: new_round, round_number: round_number
             end until new_round.result == 'lost'
             new_game = Game.new
             ::GamesView.new game: new_game
@@ -23,11 +24,15 @@ module AppController
         #p ::Game::GAMES 
         games = Game.all
         #p games <-- same reference as ::Game::GAMES (should be different?)
-        ::HighscoresView.show games: games       
+        ::HighscoresView.show games: games
+        input = gets.chomp.downcase.strip
+        input == 'menu' ? input : ::AppController.play_game
     end
 
     def show_rules
         ::RulesView.show
+        input = gets.chomp.downcase.strip
+        input == 'menu' ? input : ::AppController.play_game
     end
 
     def exit?

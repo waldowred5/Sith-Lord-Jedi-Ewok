@@ -1,7 +1,6 @@
-# require_relative '../controllers/options_controller'
-
 module RulesView
     def show
+        system('clear')
         puts "\nRules:"
         puts "In a game of 'Sith-lord, Jedi, Ewok', players play a series of rounds."
         puts "The game ends when you are defeated by the computer in any round."
@@ -13,9 +12,7 @@ module RulesView
         puts "- Jedi overpowers Sith"
         puts "\nScoring:"
         puts "Every winning round scores 100 points and every draw scores 25 points\n\n"
-        # puts "\nWhat would you like to do?\nOptions: play, menu"
-        # input = gets.chomp.downcase.strip
-        # input == 'menu' ? input : ::Dispatch.dispatch('play')
+        puts "\nWhat would you like to do?\nOptions: play, menu"
     end
 
     module_function :show
