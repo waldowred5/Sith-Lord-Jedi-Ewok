@@ -5,7 +5,7 @@ module HighscoresView
         system('clear')
         puts "\nHighscores:"
         return puts "\nNo highscores to show!" if games.empty?
-        headers = %w[Player Score]
+        headers = %w(Player Score)
         rows = build_rows games
         highscores = TTY::Table.new(header: headers, rows: rows)
         puts highscores.render :unicode, alignments: [:left, :center]

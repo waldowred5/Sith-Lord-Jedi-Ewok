@@ -1,7 +1,10 @@
 module GamesView
     def new(game:)
-        puts "\nWhat is your name?"
-        game.player_name = gets.chomp.strip
+        begin 
+            game.player_name = TTY::Prompt.new.ask("\nWhat is your name?") do |name|
+                name.validate(/\w/, "Please enter a valid name (no special characters)")
+            end
+        end while game.player_name.nil?
         game.wins = Round::ROUNDS.count {|x| x.result == 'won!'} 
         game.draws = Round::ROUNDS.count {|x| x.result == 'drew'} 
         game.score = game.wins * 100 + game.draws * 25
