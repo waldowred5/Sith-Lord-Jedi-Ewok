@@ -1,7 +1,7 @@
 module GamesView
     def new(game:)
         begin 
-            game.player_name = TTY::Prompt.new.ask("\nWhat is your name?".colorize(:light_yellow), help: '') do |name|
+            game.player_name = TTY::Prompt.new.ask("\nTo record you score, please enter your name: ".colorize(:light_yellow), help: '') do |name|
                 name.validate(/\w/, "Please enter a valid name (no special characters)".colorize(:red))
             end
         end while game.player_name.nil?

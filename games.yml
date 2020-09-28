@@ -1,13 +1,5 @@
 ---
 - !ruby/object:Game
-  id: 1
-  player_name: Vader
-  wins: 2
-  draws: 1
-  score: 225
-  date: 
-  time: 
-- !ruby/object:Game
   id: 2
   player_name: Skywalker
   wins: 3
@@ -41,25 +33,33 @@
   time: 
 - !ruby/object:Game
   id: 6
-  player_name: ader
-  wins: 0
+  player_name: Darth Vader
+  wins: 3
   draws: 0
-  score: 0
+  score: 300
   date: 
   time: 
 - !ruby/object:Game
   id: 7
-  player_name: Vader
-  wins: 1
-  draws: 2
-  score: 150
+  player_name: Snoke
+  wins: 0
+  draws: 1
+  score: 25
+  date: 
+  time: 
+- !ruby/object:Game
+  id: 7
+  player_name: Chirpa
+  wins: 0
+  draws: 0
+  score: 0
   date: 
   time: 
 - !ruby/object:Game
   id: 8
-  player_name: New Player
-  wins: 0
-  draws: 0
-  score: 0
+  player_name: Darth Sidious
+  wins: 4
+  draws: 4
+  score: 500
   date: 
   time: 

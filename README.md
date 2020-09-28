@@ -44,7 +44,19 @@ Top 3:
   - a
 
 All Features:
-- a
+- Main Menu
+- Coloured Text
+- Ascii Heading
+- Player Selection Menus
+- Display Rules
+- Quote Generator
+- Leaderboard
+- Save file for Leaderboard high scores
+- Round Tracker
+- Player Name saved in Leaderboard
+- Options sub-menu
+- Screen clear on each new menu
+- Exit check?
 
 <br>
 
@@ -58,21 +70,53 @@ All Features:
 
 <br>
 
-- TTY Prompt: Main Menu will give users the option to;
-  - Start New Game
-  - Read Rules on how to play
-  - View Highscores
+*Note: The term user refers to anyone interacting with any part of the application excluding the 'Play Game' functionality. In this mode, users are referred to as players.*
+
+Main Menu:
+- Upon launch, users will see a welcome screen which serves as the Main Menu
+- Undeneath the heading banner users are asked what they would like to do
+- Next to this is highlighted help text describing how to access each of the menu options (Press ↑/↓ arrow to move and Enter to select)
+- The user is presented with 4 options in the Main Menu:
+  - Play Game
+  - Read Rules
+  - View Leaderboard
   - Exit
-- Start New Game:
-  - Player will be given the 3 options to choose from to start a new match, either Jedi, Sith or Ewok
-  - After every match, the player will be presented with the results, win, draw or tie
-    - Win: Congrats message displayed --> asks for new selection for next match
-    - Draw: Draw message displayed --> asks for new selection for next match
-    - Lose: Loss message displayed --> asks for name input as a string to save to highscores database (Score will be some value multiplied by number of wins/draws) --> After saving highscore display 'Play Again? or Exit to menu' Message giving prompt options
-- Read Rules:
-  - Display rules description
-  - User is given 2 options: Start New Game or Exit to menu
-- Highscores:
+
+Start New Game:
+  - When a player chooses the 'Play Game' option they will be presented with a new game, which displays:
+    - Round number
+    - Instruction for player to choose a faction to start a new match
+    - Faction options: Jedi, Sith or Ewok
+  - After every match, the player will be presented with the results:
+    - Win: 
+      - "You won!" message displayed
+      - "Round saved successfully" message displayed
+      - Player is then prompted to press any key to start a new round
+    - Draw: 
+      - "You drew" message displayed
+      - "Round saved successfully" message displayed
+      - Player is then prompted to press any key to start a new round
+    - Loss:
+      - "You lost" message displayed
+      - "Round saved successfully" message displayed 
+      - Player is prompted to press any key to continue
+      - Player is then prompted to enter their name (this will be used to display their score in the Leaderboard)
+      - Thanks for playing message displayed, followed by score successfully saved message
+  - Once the game is finished due to a loss, the player will then be presented with the Options Sub-Menu, displaying:
+    - Iconic Star Wars quote
+    - Options menu with the following options:
+      - Start New Game (same as choosing Play Game from the Main Menu)
+      - Exit to Main Menu
+
+Read Rules:
+  - When a player chooses the 'Read Rules' option they will be presented with a description of the rules for 'Sith-Lord, Jedi, Ewok'
+  - The user is then presented with the Options Sub-Menu (see 'Start New Game', section 3)
+
+View Leaderboard:
+  - When a player chooses the 'View Leaderboard' option they will be presented with:
+    - A table showing a list of scores for games submitted by previous players OR
+    - If there are no scores to display, the message "No scores on the leaderboard to show!" will be displayed
+    - The user is then presented with the Options Sub-Menu (see 'Start New Game', section 3)
   - Displays Highscores as a table including: Name, score, number of wins/draws, and most picked faction
   - User is given 2 options: Start New Game or Exit to menu
 - Exit:
