@@ -1,0 +1,49 @@
+---
+- !ruby/object:Game
+  id: 1
+  player_name: Vader
+  wins: 2
+  draws: 1
+  score: 225
+  date: 
+  time: 
+- !ruby/object:Game
+  id: 2
+  player_name: Skywalker
+  wins: 3
+  draws: 2
+  score: 350
+  date: 
+  time: 
+- !ruby/object:Game
+  id: 3
+  player_name: Wicket
+  wins: 0
+  draws: 1
+  score: 25
+  date: 
+  time: 
+- !ruby/object:Game
+  id: 4
+  player_name: Obi-Wan Kenobi
+  wins: 1
+  draws: 0
+  score: 100
+  date: 
+  time: 
+- !ruby/object:Game
+  id: 5
+  player_name: Darth Maul
+  wins: 1
+  draws: 0
+  score: 100
+  date: 
+  time: 
+- !ruby/object:Game
+  id: 6
+  player_name: ader
+  wins: 0
+  draws: 0
+  score: 0
+  date: 
+  time: 

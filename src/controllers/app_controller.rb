@@ -1,6 +1,5 @@
 require_relative '../models/round'
 require_relative '../models/game'
-# require_relative '../models/quote_generator'
 require_relative '../views/rounds_view'
 require_relative '../views/games_view'
 require_relative '../views/highscores_view'
@@ -21,9 +20,9 @@ module AppController
     end
     
     def show_highscores
-        #p ::Game::GAMES 
+        # p ::Game::GAMES 
         games = Game.all
-        #p games <-- same reference as ::Game::GAMES (should be different?)
+        # p games # <-- same reference as ::Game::GAMES (should be different?)
         ::HighscoresView.show games: games
         ::AppController.play_or_menu
     end

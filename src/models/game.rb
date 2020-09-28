@@ -1,5 +1,24 @@
+require 'yaml'
+
 class Game
-    GAMES = []
+    # @games = YAML.load(File.read("games.yml")) rescue []
+    @games = YAML.load(File.read("games.yml")) rescue []
+
+    class << self
+        def map
+            @games.map { |game_ary| yield game_ary }
+        end
+
+        def next_id
+            @games.length + 1
+        end
+
+        def save(game)
+            game.id = next_id
+            @games << game
+            File.open("games.yml", "w") { |file| file.write(@games.to_yaml) }
+        end
+    end
 
     attr_accessor :id, :player_name, :wins, :draws, :score, :date, :time 
     
@@ -14,11 +33,10 @@ class Game
     end
 
     def self.all
-        GAMES # <-- Clone/Dup this?
+        @games # <-- Clone/Dup this?
     end
 
     def save!
-        @id = GAMES.length + 1
-        GAMES << self
+        self.class.save(self)
     end
 end
