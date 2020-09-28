@@ -63,3 +63,11 @@
   score: 500
   date: 
   time: 
+- !ruby/object:Game
+  id: 9
+  player_name: hu
+  wins: 0
+  draws: 3
+  score: 75
+  date: 
+  time: 

@@ -113,15 +113,15 @@ Read Rules:
   - The user is then presented with the Options Sub-Menu (see 'Start New Game', section 3)
 
 View Leaderboard:
-  - When a player chooses the 'View Leaderboard' option they will be presented with:
-    - A table showing a list of scores for games submitted by previous players OR
+  - When a user chooses the 'View Leaderboard' option they will be presented with:
+    - A table showing a list of scores for previously played games OR
     - If there are no scores to display, the message "No scores on the leaderboard to show!" will be displayed
     - The user is then presented with the Options Sub-Menu (see 'Start New Game', section 3)
-  - Displays Highscores as a table including: Name, score, number of wins/draws, and most picked faction
-  - User is given 2 options: Start New Game or Exit to menu
+
 - Exit:
-  - Include are you sure check before exiting? with Y/N
-- TTY Prompt (on selection before pressing 'Enter', tooltip-style help will be displayed)
+  - When a user chooses the 'Exit' option they will be presented with message asking if they are sure they want to exit the application:
+    - Yes: Exits the application
+    - No: Returns to the Main Menu
 
 <br>
 
