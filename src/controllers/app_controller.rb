@@ -19,10 +19,8 @@ module AppController
         ::AppController.play_or_menu
     end
     
-    def show_highscores
-        # p ::Game::GAMES 
-        games = Game.all
-        # p games # <-- same reference as ::Game::GAMES (should be different?)
+    def show_highscores 
+        games = Game.map { |game| [game.player_name, game.score] }
         ::HighscoresView.show games: games
         ::AppController.play_or_menu
     end

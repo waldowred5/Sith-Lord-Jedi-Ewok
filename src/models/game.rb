@@ -1,7 +1,6 @@
 require 'yaml'
 
 class Game
-    # @games = YAML.load(File.read("games.yml")) rescue []
     @games = YAML.load(File.read("games.yml")) rescue []
 
     class << self
@@ -30,10 +29,6 @@ class Game
         @score = 0
         @date = nil #Today's Date
         @time = nil #current time
-    end
-
-    def self.all
-        @games # <-- Clone/Dup this?
     end
 
     def save!
