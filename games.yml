@@ -23,3 +23,69 @@
   wins: 3
   draws: 0
   score: 300
+- !ruby/object:Game
+  id: 5
+  player_name: Waldow
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 6
+  player_name: est
+  wins: 0
+  draws: 2
+  score: 50
+- !ruby/object:Game
+  id: 7
+  player_name: a
+  wins: 1
+  draws: 5
+  score: 225
+- !ruby/object:Game
+  id: 8
+  player_name: k
+  wins: 4
+  draws: 2
+  score: 450
+- !ruby/object:Game
+  id: 9
+  player_name: a
+  wins: 3
+  draws: 0
+  score: 300
+- !ruby/object:Game
+  id: 10
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 11
+  player_name: h
+  wins: 3
+  draws: 2
+  score: 350
+- !ruby/object:Game
+  id: 12
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 13
+  player_name: a
+  wins: 0
+  draws: 1
+  score: 25
+- !ruby/object:Game
+  id: 14
+  player_name: a
+  wins: 2
+  draws: 0
+  score: 200
+- !ruby/object:Game
+  id: 15
+  player_name: a
+  wins: 1
+  draws: 1
+  score: 125

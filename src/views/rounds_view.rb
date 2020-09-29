@@ -14,7 +14,14 @@ module RoundsView
         print "Your opponent chose: ".colorize(:light_yellow)
         puts round.ai_selection
         puts round_result = "\nYou #{round.determine_result}".colorize(:light_yellow)
-        round_result == "\e[0;93;49m\nYou lost\e[0m" ? Sound.new('src/media/WilhelmScream.wav').play : round_result
+        case round_result
+        when "\e[0;93;49m\nYou lost\e[0m"
+            Sound.new('src/media/WilhelmScream.wav').play 
+        when "\e[0;93;49m\nYou drew\e[0m"
+            Sound.new('src/media/lightsaberclash.mp3').play
+        when "\e[0;93;49m\nYou won!\e[0m"
+            Sound.new('src/media/lightsaberspin.mp3').play
+        end
         round.save!
         puts "\nRound saved successfully".colorize(:grey)
         next_round = TTY::Prompt.new.keypress("\nPress any key to continue".colorize(:light_magenta))

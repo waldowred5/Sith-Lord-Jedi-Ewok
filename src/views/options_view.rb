@@ -16,6 +16,8 @@ module OptionsView
             Sound.new('src/media/laughfuzzball.wav').play
         when /nerf/
             Sound.new('src/media/nerfherder.wav').play
+        when /trap/
+            Sound.new('src/media/trap.mp3').play
         end
         prompt = TTY::Prompt.new.select("\n\nWhat would you like to do?".colorize(:light_yellow), help: '') do |menu|
             menu.choice "Start New Game".colorize(:light_green), true

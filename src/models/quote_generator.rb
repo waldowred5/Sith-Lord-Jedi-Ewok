@@ -20,7 +20,7 @@ class QuoteGenerator
             "'Fear is the path to the dark side.' - Yoda".colorize(:white).italic,
             "'Be mindful of your thoughts Anakin. They’ll betray you.' - Obi-Wan Kenobi".colorize(:white).italic,
             "'Someday I will be the most powerful Jedi ever.' - Anakin Skywalker".colorize(:white).italic,
-            "'May the force be with you.' - Qui-Gon Jinn, Mace Windu, Yoda, Obi-Wan Kenobi, Anakin Skywalker, Admiral Ackbar, Han Solo, Luke Skywalker, Darth Vader, Leia Organa, Amilyn Holdo, Finn".colorize(:white).italic,
+            "'May the force be with you.' - (Every Star Wars character in existence)".colorize(:white).italic,
             "'It's a trap!' - Admiral Ackbar".colorize(:white).italic,
             "'Fear is the path to the dark side. Fear leads to anger; anger leads to hate; hate leads to suffering. I sense much fear in you.' - Yoda".colorize(:white).italic,
             "'If you strike me down I shall become more powerful than you can possibly imagine.' - Obi-Wan Kenobi".colorize(:white).italic,
