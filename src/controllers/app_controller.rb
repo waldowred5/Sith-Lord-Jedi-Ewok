@@ -11,27 +11,25 @@ module AppController
     def play_game
         begin
             new_round = Round.new
-            round_number = Round::ROUNDS.length + 1
-            RoundsView.new round: new_round, round_number: round_number
+            RoundsView.new round: new_round, round_number: Round.num_rounds
         end until new_round.result == 'lost'
-        new_game = Game.new
-        GamesView.new game: new_game
-        AppController.play_or_menu
+        GamesView.new game: Game.new
+        self.play_or_menu
     end
     
     def show_highscores 
         games = Game.map { |game| [game.player_name, game.score] }
         HighscoresView.show games: games
-        AppController.play_or_menu
+        self.play_or_menu
     end
 
     def show_rules
         RulesView.show
-        AppController.play_or_menu
+        self.play_or_menu
     end
 
     def play_or_menu
-        OptionsView.show == false ? nil : ::AppController.play_game
+        OptionsView.show == false ? nil : self.play_game
     end
 
     def exit?

@@ -1,8 +1,35 @@
 class Round
-    ROUNDS = []
+    @rounds = []
 
-    attr_reader :id, :ai_input
-    attr_accessor :player_input, :player_selection, :ai_selection, :result 
+    class << self
+        def num_rounds
+            @rounds.length + 1
+        end
+
+        def count_wins
+            @rounds.count {|x| x.result == 'won!'}
+        end
+
+        def count_draws
+            @rounds.count {|x| x.result == 'drew'}
+        end
+
+        def clear_rounds
+            @rounds.clear
+        end
+
+        def next_id
+            @rounds.length + 1
+        end
+
+        def save(round)
+            round.id = next_id
+            @rounds << round
+        end
+    end
+
+    attr_reader :ai_input
+    attr_accessor :id, :player_input, :player_selection, :ai_selection, :result 
 
     def initialize
         @id = nil
@@ -31,7 +58,6 @@ class Round
     end
 
     def save!
-        @id = ROUNDS.length + 1
-        ROUNDS << self
+        self.class.save(self)
     end
 end
