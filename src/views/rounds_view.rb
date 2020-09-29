@@ -1,5 +1,3 @@
-require 'lolcat'
-
 module RoundsView
     def new(round:, round_number:)
         system('clear')
@@ -19,7 +17,6 @@ module RoundsView
         round.save!
         puts "\nRound saved successfully".colorize(:grey)
         next_round = TTY::Prompt.new.keypress("\nPress any key to continue".colorize(:light_magenta))
-        puts "Rainbow" | lolcat -a -d 500
     end
 
     module_function :new

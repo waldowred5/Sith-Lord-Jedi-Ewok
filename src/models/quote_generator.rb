@@ -2,6 +2,7 @@ class QuoteGenerator
     def choose_quote
         quotes = [
             "'Help me, Obi-Wan Kenobi. You're my only hope.' - Leia Organa".colorize(:white).italic,
+            "'ROOOOOOAAAAAAAR.' - Chewbacca".colorize(:white).italic,
             "'I find your lack of faith disturbing.' - Darth Vader".colorize(:white).italic,
             "'It's the ship that made the Kessel run in less than twelve parsecs.' - Han Solo".colorize(:white).italic,
             "'The Force will be with you. Always.' - Obi-Wan Kenobi".colorize(:white).italic,
@@ -34,6 +35,6 @@ class QuoteGenerator
             "'The ability to destroy a planet is insignificant next to the power of the Force.' - Darth Vader".colorize(:white).italic,
             "'[Beep], [beep] [boop], [whistle]' - R2-D2".colorize(:white).italic           
         ]
-        quotes[rand(32)]
+        quotes[rand(33)]
     end
 end
