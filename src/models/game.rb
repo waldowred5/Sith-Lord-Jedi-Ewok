@@ -19,7 +19,7 @@ class Game
         end
     end
 
-    attr_accessor :id, :player_name, :wins, :draws, :score, :date, :time 
+    attr_accessor :id, :player_name, :wins, :draws, :score 
     
     def initialize
         @id = nil
@@ -27,8 +27,6 @@ class Game
         @wins = 0
         @draws = 0
         @score = 0
-        @date = nil #Today's Date
-        @time = nil #current time
     end
 
     def save!

@@ -50,6 +50,7 @@ All Features:
 - Player Selection Menus
 - Display Rules
 - Quote Generator
+- Sound Bytes
 - Leaderboard
 - Save file for Leaderboard high scores
 - Round Tracker

@@ -1,121 +1,25 @@
 ---
 - !ruby/object:Game
+  id: 1
+  player_name: Luke Skywalker
+  wins: 4
+  draws: 2
+  score: 450
+- !ruby/object:Game
   id: 2
-  player_name: Skywalker
+  player_name: Wicket
+  wins: 1
+  draws: 1
+  score: 125
+- !ruby/object:Game
+  id: 3
+  player_name: Obi-Wan Kenobi
   wins: 3
   draws: 2
   score: 350
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 3
-  player_name: Wicket
-  wins: 0
-  draws: 1
-  score: 25
-  date: 
-  time: 
 - !ruby/object:Game
   id: 4
-  player_name: Obi-Wan Kenobi
-  wins: 1
-  draws: 0
-  score: 100
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 5
-  player_name: Darth Maul
-  wins: 1
-  draws: 0
-  score: 100
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 6
   player_name: Darth Vader
   wins: 3
   draws: 0
   score: 300
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 7
-  player_name: Snoke
-  wins: 0
-  draws: 1
-  score: 25
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 7
-  player_name: Chirpa
-  wins: 0
-  draws: 0
-  score: 0
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 8
-  player_name: Darth Sidious
-  wins: 4
-  draws: 4
-  score: 500
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 9
-  player_name: hu
-  wins: 0
-  draws: 3
-  score: 75
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 10
-  player_name: a
-  wins: 0
-  draws: 0
-  score: 0
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 11
-  player_name: fadw
-  wins: 1
-  draws: 0
-  score: 100
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 12
-  player_name: a
-  wins: 0
-  draws: 2
-  score: 50
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 13
-  player_name: a
-  wins: 0
-  draws: 0
-  score: 0
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 14
-  player_name: a
-  wins: 0
-  draws: 1
-  score: 25
-  date: 
-  time: 
-- !ruby/object:Game
-  id: 15
-  player_name: a
-  wins: 0
-  draws: 0
-  score: 0
-  date: 
-  time: 
