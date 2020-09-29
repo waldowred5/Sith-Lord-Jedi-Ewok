@@ -23,3 +23,15 @@
   wins: 3
   draws: 0
   score: 300
+- !ruby/object:Game
+  id: 5
+  player_name: Waldow
+  wins: 2
+  draws: 1
+  score: 225
+- !ruby/object:Game
+  id: 6
+  player_name: Waldow
+  wins: 2
+  draws: 0
+  score: 200
