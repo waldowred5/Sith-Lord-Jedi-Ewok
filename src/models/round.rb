@@ -35,12 +35,3 @@ class Round
         ROUNDS << self
     end
 end
-
-
-# p game1 = Round.new
-# puts "Please choose: 0 = Sith, 1 = Jedi, 2 = Ewok"
-# game1.player_input = gets.chomp.to_i
-# game1.player_selection = game1.selections(game1.player_input)
-# puts game1.determine_result
-# game1.save!
-# p Round::ROUNDS

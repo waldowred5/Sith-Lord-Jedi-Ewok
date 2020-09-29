@@ -10,9 +10,11 @@ module GamesView
         game.score = game.wins * 100 + game.draws * 25
         system('clear')
         puts "\nThanks for playing, #{game.player_name}, your score was #{game.score}\n".colorize(:light_yellow)
+        sleep(2)
         game.save!
-        puts "Your score was saved successfully to the Leaderboard!".colorize(:light_yellow)
-        ::Round::ROUNDS.clear
+        puts "Your score was saved successfully to the Leaderboard!".colorize(:white)
+        sleep(2)
+        Round::ROUNDS.clear
     end
 
     module_function :new

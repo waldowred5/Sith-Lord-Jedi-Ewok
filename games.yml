@@ -35,3 +35,189 @@
   wins: 2
   draws: 0
   score: 200
+- !ruby/object:Game
+  id: 7
+  player_name: Waldow123
+  wins: 1
+  draws: 1
+  score: 125
+- !ruby/object:Game
+  id: 8
+  player_name: Anakin Skywalker
+  wins: 1
+  draws: 0
+  score: 100
+- !ruby/object:Game
+  id: 9
+  player_name: Waldow12345
+  wins: 0
+  draws: 1
+  score: 25
+- !ruby/object:Game
+  id: 10
+  player_name: Jedi1
+  wins: 2
+  draws: 2
+  score: 250
+- !ruby/object:Game
+  id: 11
+  player_name: Game1
+  wins: 0
+  draws: 2
+  score: 50
+- !ruby/object:Game
+  id: 12
+  player_name: Fang
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 13
+  player_name: Harry
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 14
+  player_name: Har
+  wins: 2
+  draws: 2
+  score: 250
+- !ruby/object:Game
+  id: 15
+  player_name: A
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 16
+  player_name: l
+  wins: 1
+  draws: 4
+  score: 200
+- !ruby/object:Game
+  id: 17
+  player_name: a
+  wins: 1
+  draws: 0
+  score: 100
+- !ruby/object:Game
+  id: 18
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 19
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 20
+  player_name: a
+  wins: 1
+  draws: 1
+  score: 125
+- !ruby/object:Game
+  id: 21
+  player_name: a
+  wins: 2
+  draws: 0
+  score: 200
+- !ruby/object:Game
+  id: 22
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 23
+  player_name: a
+  wins: 0
+  draws: 1
+  score: 25
+- !ruby/object:Game
+  id: 24
+  player_name: a
+  wins: 4
+  draws: 0
+  score: 400
+- !ruby/object:Game
+  id: 25
+  player_name: a
+  wins: 0
+  draws: 2
+  score: 50
+- !ruby/object:Game
+  id: 26
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 27
+  player_name: a
+  wins: 0
+  draws: 3
+  score: 75
+- !ruby/object:Game
+  id: 28
+  player_name: l
+  wins: 0
+  draws: 1
+  score: 25
+- !ruby/object:Game
+  id: 29
+  player_name: a
+  wins: 0
+  draws: 2
+  score: 50
+- !ruby/object:Game
+  id: 30
+  player_name: l
+  wins: 1
+  draws: 1
+  score: 125
+- !ruby/object:Game
+  id: 31
+  player_name: a
+  wins: 1
+  draws: 1
+  score: 125
+- !ruby/object:Game
+  id: 32
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 33
+  player_name: a
+  wins: 2
+  draws: 2
+  score: 250
+- !ruby/object:Game
+  id: 34
+  player_name: l
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 35
+  player_name: a
+  wins: 2
+  draws: 0
+  score: 200
+- !ruby/object:Game
+  id: 36
+  player_name: a
+  wins: 2
+  draws: 1
+  score: 225
+- !ruby/object:Game
+  id: 37
+  player_name: a
+  wins: 1
+  draws: 0
+  score: 100
