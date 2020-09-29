@@ -15,3 +15,27 @@ module OptionsView
 
     module_function :show
 end
+
+
+
+
+
+
+
+# Refactoring Quote Generator quote array to class instance variable removed all of this!
+# case quote
+# when /R2-D2/
+#     Sound.new('src/media/name.wav').play
+# when /R2-D2/
+#     Sound.new('src/media/name.wav').play
+# when /R2-D2/
+#     Sound.new('src/media/name.wav').play
+# when /R2-D2/
+#     Sound.new('src/media/name.wav').play
+# when /R2-D2/
+#     Sound.new('src/media/name.wav').play
+# when /R2-D2/
+#     Sound.new('src/media/name.wav').play
+# when /R2-D2/
+#     Sound.new('src/media/name.wav').play
+# end

@@ -17,6 +17,8 @@ module RoundsView
         puts round.ai_selection
         sleep(1)
         puts round_result = "\nYou #{round.determine_result}".colorize(:light_yellow)
+
+        # Save these sound byte paths to hash in round.rb to remove the need for case statement
         case round_result
         when "\e[0;93;49m\nYou lost\e[0m"
             Sound.new('src/media/WilhelmScream.wav').play 
@@ -25,6 +27,7 @@ module RoundsView
         when "\e[0;93;49m\nYou won!\e[0m"
             Sound.new('src/media/lightsaberspin.mp3').play
         end
+        
         round.save!
         puts "\nRound saved successfully".colorize(:grey)
         TTY::Prompt.new.keypress("\nPress any key to continue".colorize(:light_magenta))
