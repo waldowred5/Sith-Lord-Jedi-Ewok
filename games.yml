@@ -71,3 +71,51 @@
   score: 75
   date: 
   time: 
+- !ruby/object:Game
+  id: 10
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 0
+  date: 
+  time: 
+- !ruby/object:Game
+  id: 11
+  player_name: fadw
+  wins: 1
+  draws: 0
+  score: 100
+  date: 
+  time: 
+- !ruby/object:Game
+  id: 12
+  player_name: a
+  wins: 0
+  draws: 2
+  score: 50
+  date: 
+  time: 
+- !ruby/object:Game
+  id: 13
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 0
+  date: 
+  time: 
+- !ruby/object:Game
+  id: 14
+  player_name: a
+  wins: 0
+  draws: 1
+  score: 25
+  date: 
+  time: 
+- !ruby/object:Game
+  id: 15
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 0
+  date: 
+  time: 

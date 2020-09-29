@@ -13,7 +13,8 @@ module RoundsView
         puts round.player_selection
         print "Your opponent chose: ".colorize(:light_yellow)
         puts round.ai_selection
-        puts "\nYou #{round.determine_result}".colorize(:light_yellow)
+        puts round_result = "\nYou #{round.determine_result}".colorize(:light_yellow)
+        round_result == "\e[0;93;49m\nYou lost\e[0m" ? Sound.new('src/media/WilhelmScream.wav').play : round_result
         round.save!
         puts "\nRound saved successfully".colorize(:grey)
         next_round = TTY::Prompt.new.keypress("\nPress any key to continue".colorize(:light_magenta))

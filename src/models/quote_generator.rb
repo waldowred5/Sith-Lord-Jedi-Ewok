@@ -1,12 +1,15 @@
 class QuoteGenerator
     def choose_quote
         quotes = [
-            "'Help me, Obi-Wan Kenobi. You're my only hope.' - Leia Organa".colorize(:white).italic,
+            "'[Beep], [beep] [boop], [whistle]' - R2-D2".colorize(:white).italic,    
             "'ROOOOOOAAAAAAAR.' - Chewbacca".colorize(:white).italic,
+            "'What is thy bidding, my master?' - Darth Vader".colorize(:white).italic,
+            "'The Force will be with you. Always.' - Obi-Wan Kenobi".colorize(:white).italic,
+            "'Laugh it up fuzzball.' - Han Solo".colorize(:white).italic,
+            "'Why, you stuck-up, half-witted, scruffy-looking nerf herder!' - Leia Organa".colorize(:white).italic,
+            "'Help me, Obi-Wan Kenobi. You're my only hope.' - Leia Organa".colorize(:white).italic,
             "'I find your lack of faith disturbing.' - Darth Vader".colorize(:white).italic,
             "'It's the ship that made the Kessel run in less than twelve parsecs.' - Han Solo".colorize(:white).italic,
-            "'The Force will be with you. Always.' - Obi-Wan Kenobi".colorize(:white).italic,
-            "'Why, you stuck-up, half-witted, scruffy-looking nerf herder!' - Leia Organa".colorize(:white).italic,
             "'Now THIS is podracing' - Anakin Skywalker".colorize(:white).italic,
             "'I'll never turn to the dark side. You've failed, your highness. I am a Jedi, like my father before me.' - Luke Skywalker".colorize(:white).italic,
             "'There's always a bigger fish.' - Qui-Gon Jinn".colorize(:white).italic,
@@ -32,9 +35,8 @@ class QuoteGenerator
             "'Sir, the possibility of successfully navigating an asteroid field is approximately 3,720 to 1.' - C-3PO".colorize(:white).italic,
             "'Never tell me the odds.' - Han Solo".colorize(:white).italic,
             "'Master Kenobi, you disappoint me. Yoda holds you in such high esteem. Surely you can do better!' - Count Dooku".colorize(:white).italic,
-            "'The ability to destroy a planet is insignificant next to the power of the Force.' - Darth Vader".colorize(:white).italic,
-            "'[Beep], [beep] [boop], [whistle]' - R2-D2".colorize(:white).italic           
+            "'The ability to destroy a planet is insignificant next to the power of the Force.' - Darth Vader".colorize(:white).italic,  
         ]
-        quotes[rand(33)]
+        quotes[rand(35)]
     end
 end
