@@ -1,6 +1,6 @@
 class QuoteGenerator
     # for DEMO purposes only: see below under class method quote_index for more info
-    @fixed_idx = 0
+    # @fixed_idx = 0
     # ^ comment out when switching to PRODUCTION
     
     @quotes = [
@@ -47,10 +47,10 @@ class QuoteGenerator
     class << self
         def quote_index
             # DEMO: Use to force each quote + sound to be played one after another instead of being selected at random
-            @fixed_idx == 6 ? @fixed_idx = 0 : @fixed_idx += 1
+            # @fixed_idx == 6 ? @fixed_idx = 0 : @fixed_idx += 1
             
             # PRODUCTION
-            # rand(35)
+            rand(35)
         end
 
         def choose_quote(idx)
