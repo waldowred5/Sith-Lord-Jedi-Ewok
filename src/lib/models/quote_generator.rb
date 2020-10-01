@@ -5,13 +5,13 @@ class QuoteGenerator
     
     @quotes = [
         # Quotes with sound bytes (7)
-        ["'[Beep], [beep] [boop], [whistle]' - R2-D2", 'src/media/R2D2-yeah.wav'],    
-        ["'ROOOOOOAAAAAAAR.' - Chewbacca", 'src/media/chewy_roar.wav'],
-        ["'What is thy bidding, my master?' - Darth Vader", 'src/media/swvader04.wav'],
-        ["'The Force will be with you. Always.' - Obi-Wan Kenobi", 'src/media/force.wav'],
-        ["'Laugh it up fuzzball.' - Han Solo", 'src/media/laughfuzzball.wav'],
-        ["'Why, you stuck-up, half-witted, scruffy-looking nerf herder!' - Leia Organa", 'src/media/nerfherder.wav'],
-        ["'It's a trap!' - Admiral Ackbar", 'src/media/trap.mp3'],
+        ["'[Beep], [beep] [boop], [whistle]' - R2-D2", 'src/lib/media/R2D2-yeah.wav'],    
+        ["'ROOOOOOAAAAAAAR.' - Chewbacca", 'src/lib/media/chewy_roar.wav'],
+        ["'What is thy bidding, my master?' - Darth Vader", 'src/lib/media/swvader04.wav'],
+        ["'The Force will be with you. Always.' - Obi-Wan Kenobi", 'src/lib/media/force.wav'],
+        ["'Laugh it up fuzzball.' - Han Solo", 'src/lib/media/laughfuzzball.wav'],
+        ["'Why, you stuck-up, half-witted, scruffy-looking nerf herder!' - Leia Organa", 'src/lib/media/nerfherder.wav'],
+        ["'It's a trap!' - Admiral Ackbar", 'src/lib/media/trap.mp3'],
 
         # Quotes without soundbytes (28)
         ["'Sir, the possibility of successfully navigating an asteroid field is approximately 3,720 to 1.' - C-3PO", nil],

@@ -35,3 +35,9 @@
   wins: 0
   draws: 0
   score: 125
+- !ruby/object:Game
+  id: 7
+  player_name: YAML Move test
+  wins: 0
+  draws: 0
+  score: 250

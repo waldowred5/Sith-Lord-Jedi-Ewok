@@ -35,32 +35,44 @@ Usage:
 
 <br>
 
-Main Features:
-- Play Game:
-  - Players play rounds of 'Sith-Lord, Jedi, Ewok' against computer player until they lose
-  - Once a player 
-- Leaderboard:
-  - a
-- Show Rules:
-  - a
+*Note: The term 'user' refers to anyone interacting with any part of the application excluding the 'Play Game' functionality. In this mode, 'users' are referred to as 'players'.*
 
-All Features:
-- Main Menu
-- Coloured Text
-- Ascii Heading
-- Player Selection Menus
-- Display Rules
-- Quote Generator
-- Sound Bytes
-- Leaderboard
-- Save file for Leaderboard high scores
-- Round Tracker
-- Player Name saved in Leaderboard
-- Options sub-menu
-- Screen clear on each new menu
-- Exit check?
-- Sleep
-- DEMO Mode
+<br>
+
+Features:
+- Main Menu:
+  - The opening screen for the application includes a weclome banner with Ascii art and 4 options for the user to choose from by using the up and down arrows and enter to select
+  - All text in the application is coloured!
+  - Every new menu is displayed on a fresh screen with `system('clear')`
+
+- Play Game:
+  - From the Main Menu, users can choose the 'Play Game' option
+  - Once selected, players play rounds of 'Sith-Lord, Jedi, Ewok' against computer player until they lose
+  - During each round the following are printed to the screen:
+    - Round Number
+    - Player choice
+    - Computer choice
+  - The end of each round includes a unique Star Wars sound byte for each of the 3 possible results (win, lose, draw)
+  - Once a player loses a round to the computer they enter their name to save their score to the Leaderboard
+  - The computer player makes choices based on a random number generator, which maps to each of the three factions (Sith, Jedi or Ewok)
+  - The computer choice is then compared with the player choice to determine the result of the round
+
+- View Leaderboard:
+  - If the user chooses the 'View Leaderboard' option from the main menu, the app will display the top 10 highest scores for previously played games
+  - These scores are saved to an external YAML file, which allows players to save the high scores of their games to the Leaderboard, which persists between sessions
+  - If there are no previous scores available, the error message, "No scores on the leaderboard to show!" will be displayed to the user
+
+- Show Rules:
+  - A list of rules for the game are displayed including an explanation of the scoring system
+
+- Sub-Options Menu:
+  - At the end of each 'Play Game', 'View Leaderboard' and 'Show Rules' screens the player is prompted to press any key to continue, followed by:
+    - A randomly selected Star Wars quote is printed to the screen and the quote sound byte is played (if there is a corresponding sound byte available)
+      - There is a DEMO mode which can be activated in the 'quote_generator' file in the code base to ensure only quotes with sound bytes are selected to enhance the demo experience
+    - One of 2 options to select from: 'Play New Game' or 'Exit to Main Menu'
+  
+- Exit
+  - Finally, when players are ready to leave and select the 'Exit' option from the Main Menu, they are asked if they are sure they want to leave, and prompted to stay in the app with a sound byte of Luke Skywalker
 
 <br>
 
@@ -114,7 +126,7 @@ Read Rules:
 View Leaderboard:
   - When a user chooses the 'View Leaderboard' option they will be presented with:
     - A table showing a list of scores for previously played games OR
-    - If there are no scores to display, the message "No scores on the leaderboard to show!" will be displayed
+    - If there are no scores to display, the error message "No scores on the leaderboard to show!" will be displayed to the user
     - The user is then presented with the Options Sub-Menu (see 'Start New Game', section 3)
 
 - Exit:

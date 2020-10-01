@@ -1,9 +1,9 @@
 class Round
     @rounds = []
     @round_result_sounds = {
-        'lost' => 'src/media/WilhelmScream.wav',
-        'drew' => 'src/media/lightsaberclash.mp3',
-        'won!' => 'src/media/lightsaberspin.mp3'
+        'lost' => 'src/lib/media/WilhelmScream.wav',
+        'drew' => 'src/lib/media/lightsaberclash.mp3',
+        'won!' => 'src/lib/media/lightsaberspin.mp3'
     }
 
     class << self

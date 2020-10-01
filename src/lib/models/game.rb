@@ -1,7 +1,7 @@
 require 'yaml'
 
 class Game
-    @games = YAML.load(File.read("games.yml")) rescue []
+    @games = YAML.load(File.read("src/lib/games.yml")) rescue []
 
     class << self
         def map
@@ -15,7 +15,7 @@ class Game
         def save(game)
             game.id = next_id
             @games << game
-            File.open("games.yml", "w") { |file| file.write(@games.to_yaml) }
+            File.open("src/lib/games.yml", "w") { |file| file.write(@games.to_yaml) }
         end
     end
 
