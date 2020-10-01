@@ -1,6 +1,6 @@
 # **Terminal Application - Daniel Waldow**
 
-### Github Repository: www.example.com
+### Github Repository: https://github.com/waldowred5/T1A3-Terminal-App
 
 <br>
 
@@ -35,9 +35,10 @@ Usage:
 
 <br>
 
-Top 3:
-- Computer Player (AI):
-  - a
+Main Features:
+- Play Game:
+  - Players play rounds of 'Sith-Lord, Jedi, Ewok' against computer player until they lose
+  - Once a player 
 - Leaderboard:
   - a
 - Show Rules:
@@ -58,6 +59,8 @@ All Features:
 - Options sub-menu
 - Screen clear on each new menu
 - Exit check?
+- Sleep
+- DEMO Mode
 
 <br>
 
@@ -65,13 +68,7 @@ All Features:
 
 <br>
 
-- how the user will find out how to interact with / use each feature
-- how the user will interact with / use each feature
-- how errors will be handled by the application and displayed to the user
-
-<br>
-
-*Note: The term user refers to anyone interacting with any part of the application excluding the 'Play Game' functionality. In this mode, users are referred to as players.*
+*Note: The term 'user' refers to anyone interacting with any part of the application excluding the 'Play Game' functionality. In this mode, 'users' are referred to as 'players'.*
 
 Main Menu:
 - Upon launch, users will see a welcome screen which serves as the Main Menu
@@ -102,6 +99,7 @@ Start New Game:
       - "Round saved successfully" message displayed 
       - Player is prompted to press any key to continue
       - Player is then prompted to enter their name (this will be used to display their score in the Leaderboard)
+        - If the player enters a name with non-alphanumeric characters they will be presented with the error message, "Please enter a valid name (no special characters)". This message is part of a loop which will be displayed every time a user enters an invalid name until they enter a valid name (the validation allows for numbers so players can use aliases).
       - Thanks for playing message displayed, followed by score successfully saved message
   - Once the game is finished due to a loss, the player will then be presented with the Options Sub-Menu, displaying:
     - Iconic Star Wars quote
@@ -130,10 +128,7 @@ View Leaderboard:
 
 <br>
 
-![App Flowchart](docs/img/flowcharts/app-game-overview-flowcharts_white.png)
-
-- show the workflow/logic and/or integration of the features in your application for each feature.
-- utilise a recognised format or set of conventions for a control flow diagram, such as UML.
+![App Flowchart](docs/img/flowcharts/app-game-overview-flowcharts-v2_white.png)
 
 <br>
 

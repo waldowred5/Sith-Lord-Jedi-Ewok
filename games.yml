@@ -25,7 +25,13 @@
   score: 300
 - !ruby/object:Game
   id: 5
-  player_name: Waldow
+  player_name: a
   wins: 0
   draws: 0
-  score: 200
+  score: 50
+- !ruby/object:Game
+  id: 6
+  player_name: asd
+  wins: 0
+  draws: 0
+  score: 125

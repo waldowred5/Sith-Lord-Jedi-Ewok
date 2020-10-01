@@ -1,9 +1,9 @@
 class Round
     @rounds = []
     @round_result_sounds = {
-        lost: 'src/media/WilhelmScream.wav',
-        drew: 'src/media/lightsaberclash.mp3',
-        won: 'src/media/lightsaberspin.mp3'
+        'lost' => 'src/media/WilhelmScream.wav',
+        'drew' => 'src/media/lightsaberclash.mp3',
+        'won!' => 'src/media/lightsaberspin.mp3'
     }
 
     class << self
@@ -21,6 +21,10 @@ class Round
 
         def clear_rounds
             @rounds.clear
+        end
+
+        def get_sound(result)
+            @round_result_sounds[result]
         end
 
         def next_id
