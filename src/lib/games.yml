@@ -41,3 +41,9 @@
   wins: 0
   draws: 0
   score: 250
+- !ruby/object:Game
+  id: 8
+  player_name: Test
+  wins: 0
+  draws: 0
+  score: 225
