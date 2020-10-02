@@ -1,4 +1,3 @@
-require "sith_jedi_ewok/version"
 require 'ruby2d'
 require 'tty-prompt'
 require 'colorize'
