@@ -4,7 +4,7 @@ require 'colorize'
 require 'artii'
 require_relative 'dispatch'
 
-Sound.new('src/lib/media/blaster-firing.wav').play
+Sound.new('media/blaster-firing.wav').play
 loop do
     system('clear')
     puts "Welcome to...".colorize(:light_yellow)

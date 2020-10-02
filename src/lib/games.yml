@@ -47,3 +47,9 @@
   wins: 0
   draws: 0
   score: 0
+- !ruby/object:Game
+  id: 9
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 0
