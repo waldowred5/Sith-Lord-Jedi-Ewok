@@ -1,11 +1,13 @@
 module GamesView
-    def new(game:)
+    def get_player_name(game:)
         begin 
             game.player_name = TTY::Prompt.new.ask("\nTo record you score, please enter your name: ".colorize(:light_yellow), help: '') do |name|
                 name.validate(/\w/, "Please enter a valid name (no special characters)".colorize(:red))
             end
         end while game.player_name.nil?
-        game.score = Round.count_wins * 100 + Round.count_draws * 25
+    end
+    
+    def new(game:)
         system('clear')
         puts "\nThanks for playing, #{game.player_name}, your score was #{game.score}\n".colorize(:light_yellow)
         sleep(2)
@@ -15,5 +17,5 @@ module GamesView
         Round.clear_rounds
     end
 
-    module_function :new
+    module_function :new, :get_player_name
 end

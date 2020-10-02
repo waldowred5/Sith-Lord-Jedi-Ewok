@@ -13,7 +13,10 @@ module AppController
             new_round = Round.new
             RoundsView.new round: new_round, round_number: Round.num_rounds
         end until new_round.result == 'lost'
-        GamesView.new game: Game.new
+        new_game = Game.new
+        GamesView.get_player_name game: new_game
+        new_game.score = Round.count_wins * 100 + Round.count_draws * 25
+        GamesView.new game: new_game
         self.play_or_menu
     end
     

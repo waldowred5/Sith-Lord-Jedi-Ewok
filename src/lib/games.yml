@@ -23,27 +23,3 @@
   wins: 3
   draws: 0
   score: 300
-- !ruby/object:Game
-  id: 5
-  player_name: a
-  wins: 0
-  draws: 0
-  score: 50
-- !ruby/object:Game
-  id: 6
-  player_name: asd
-  wins: 0
-  draws: 0
-  score: 125
-- !ruby/object:Game
-  id: 7
-  player_name: YAML Move test
-  wins: 0
-  draws: 0
-  score: 250
-- !ruby/object:Game
-  id: 8
-  player_name: Test
-  wins: 0
-  draws: 0
-  score: 225
