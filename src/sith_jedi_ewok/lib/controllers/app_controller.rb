@@ -11,6 +11,7 @@ module AppController
     def play_game
         begin
             self.clear_screen
+            Sound.new('lib/media/blaster-firing.wav').play
             new_round = Round.new
             request_player_input = RoundsView.input round: new_round, round_number: Round.num_rounds
             new_round.player_input = request_player_input
