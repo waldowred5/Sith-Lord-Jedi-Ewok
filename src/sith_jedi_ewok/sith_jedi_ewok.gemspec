@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
   end
   # spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.executables << 'console'
+  spec.executables << 'sith_jedi_ewok'
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "rake", "~> 12.0"
