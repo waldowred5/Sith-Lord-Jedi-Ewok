@@ -8,12 +8,11 @@ module GamesView
     end
     
     def thanks(game)
-        system('clear')
         puts "\nThanks for playing, #{game.player_name}, your score was #{game.score}\n".colorize(:light_yellow)
+        sleep(2)
     end
     
     def successful_save
-        sleep(2)
         puts "Your score was saved successfully to the Leaderboard!".colorize(:white)
         sleep(2)
     end

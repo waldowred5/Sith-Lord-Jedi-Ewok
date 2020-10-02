@@ -53,3 +53,21 @@
   wins: 0
   draws: 0
   score: 0
+- !ruby/object:Game
+  id: 10
+  player_name: vut
+  wins: 0
+  draws: 0
+  score: 100
+- !ruby/object:Game
+  id: 11
+  player_name: ",o"
+  wins: 0
+  draws: 0
+  score: 0
+- !ruby/object:Game
+  id: 12
+  player_name: grahre
+  wins: 0
+  draws: 0
+  score: 25

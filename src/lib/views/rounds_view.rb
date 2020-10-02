@@ -1,6 +1,5 @@
 module RoundsView
     def input(round:, round_number:)
-        system('clear')
         puts "Round: #{round_number}".colorize(:light_yellow)
         TTY::Prompt.new.select("\nPlease choose your desired faction:".colorize(:light_yellow), help: '') do |menu|
             menu.choice "Sith".colorize(:light_red), 0

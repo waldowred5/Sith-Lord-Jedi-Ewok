@@ -1,6 +1,5 @@
 module RulesView
     def show
-        system('clear')
         puts "Rules:".colorize(:light_magenta)
         puts "\nIn a game of 'Sith-lord, Jedi, Ewok', players play a series of rounds.".colorize(:light_yellow)
         puts "The game ends when you are defeated by the computer in any round.".colorize(:light_yellow)
