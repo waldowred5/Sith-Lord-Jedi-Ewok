@@ -1,6 +1,6 @@
 module ExitView
     def show
-        Sound.new('media/swluke01.wav').play
+        Sound.new('lib/media/swluke01.wav').play
         to_exit = TTY::Prompt.new.select("Are you sure you want to exit?".colorize(:light_yellow), help: '') do |menu|
             menu.choice "Yes".colorize(:light_green), true
             menu.choice "No".colorize(:light_red), false

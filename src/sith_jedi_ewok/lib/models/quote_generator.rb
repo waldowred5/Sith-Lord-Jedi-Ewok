@@ -3,7 +3,7 @@ class QuoteGenerator
     # Use to force each quote + sound to be played one after another instead of being selected at random
     @fixed_idx = 0 # <-- comment out when switching to PRODUCTION
     
-    @quotes = YAML.load(File.read("media/quotes.yml"))
+    @quotes = YAML.load(File.read("lib/media/quotes.yml"))
             
     class << self
         def quote_index

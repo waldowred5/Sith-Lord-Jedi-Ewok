@@ -1,4 +1,4 @@
-# SithJediEwok
+# Sith-Lord, Jedi, Ewok
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/sith_jedi_ewok`. To experiment with that code, run `bin/console` for an interactive prompt.
 

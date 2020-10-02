@@ -5,7 +5,7 @@ require 'artii'
 require_relative 'dispatch'
 
 if ARGV.empty?
-    Sound.new('media/blaster-firing.wav').play
+    Sound.new('lib/media/blaster-firing.wav').play
     loop do
         system('clear')
         puts "Welcome to...".colorize(:light_yellow)
@@ -21,12 +21,10 @@ if ARGV.empty?
 elsif ARGV[0] == "-h" || ARGV[0] == "--help"
     puts "\n--- Help Menu ---"
     puts "\nInstallation:"
-    puts "  To install this gem, run:\n"
-    # puts "  gem install ./dungeonsofheck-1.0.gem"
-    puts "  irb"
-    puts "  require 'sith_jedi_ewok'"
-    puts "  OR"
-    puts "  ruby sith_jedi_ewok.rb"
+    puts "  To install this gem, Add this line to your application's Gemfile:"
+    puts "  gem 'sith_jedi_ewok'"
+    puts "  and then execute 'bundle install'"
+    puts "  or install yourself as 'gem install sith_jedi_ewok'"
     puts "\nOptions:"
     puts "  -h or --help        # get help file\n\n"
 end

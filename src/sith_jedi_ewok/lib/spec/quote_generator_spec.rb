@@ -9,7 +9,7 @@ describe QuoteGenerator do
     end
 
     it "should return correct sound byte path from external quotes file'" do
-        expect(QuoteGenerator.quote_sound(0)).to eq 'media/R2D2-yeah.wav'
-        expect(QuoteGenerator.quote_sound(1)).to eq 'media/chewy_roar.wav'
+        expect(QuoteGenerator.quote_sound(0)).to eq 'lib/media/R2D2-yeah.wav'
+        expect(QuoteGenerator.quote_sound(1)).to eq 'lib/media/chewy_roar.wav'
     end
 end

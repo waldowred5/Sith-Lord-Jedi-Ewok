@@ -148,7 +148,7 @@ View Leaderboard:
 
 <br>
 
-- Write out list here or link to Trello board?
+https://trello.com/b/jzbxsG9I/terminal-application
 
 <br>
 
@@ -156,12 +156,37 @@ View Leaderboard:
 
 <br>
 
-- steps to install the application
-- any dependencies required by the application to operate
-- any system/hardware requirements
+Installation:
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'sith_jedi_ewok'
+```
+
+And then execute:
+
+    $ bundle install
+
+Or install it yourself as:
+
+    $ gem install sith_jedi_ewok
+
+- Dependencies:
+  - Rake: v12.0
+  - Rspec: v3.9
+  - TTY-Table: v0.12
+  - TTY-Prompt: v0.22.0
+  - Colorize: v0.8.1
+  - Artii: v2.1
+  - Ruby 2D: 0.9.2
+- System/Requirements
+  - Mac: Install listed dependencies
+  - Windows/Linux: The Ruby 2D gem requires that the MSYS2 devkit has been installed
+    - More info at: https://rubyinstaller.org/add-ons/devkit.html
 
 <br>
 
-<br>
+## License
 
-### *References:*
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
