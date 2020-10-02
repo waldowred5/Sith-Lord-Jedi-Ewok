@@ -2,7 +2,7 @@ require 'tty-table'
 
 module HighscoresView
     def show(games:) 
-        system('clear')
+        # system('clear') <-- create method in controller for all examples of screen clear
         puts "Leaderboard:".colorize(:light_yellow)
         return puts "\nNo scores on the leaderboard to show!".colorize(:red) if games.empty?
         headers = ['Player'.colorize(:light_blue), 'Score'.colorize(:light_magenta)]

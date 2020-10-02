@@ -11,7 +11,6 @@ module AppController
     def play_game
         begin
             new_round = Round.new
-            # RoundsView.new round: new_round, round_number: Round.num_rounds
             request_player_input = RoundsView.input round: new_round, round_number: Round.num_rounds
             new_round.player_input = request_player_input
             new_round.player_selection = new_round.selections request_player_input
