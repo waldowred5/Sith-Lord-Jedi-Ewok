@@ -1,18 +1,18 @@
 ---
 - - "'[Beep], [beep] [boop], [whistle]' - R2-D2"
-  - media/R2D2-yeah.wav
+  - lib/media/R2D2-yeah.wav
 - - "'ROOOOOOAAAAAAAR.' - Chewbacca"
-  - media/chewy_roar.wav
+  - lib/media/chewy_roar.wav
 - - "'What is thy bidding, my master?' - Darth Vader"
-  - media/swvader04.wav
+  - lib/media/swvader04.wav
 - - "'The Force will be with you. Always.' - Obi-Wan Kenobi"
-  - media/force.wav
+  - lib/media/force.wav
 - - "'Laugh it up fuzzball.' - Han Solo"
-  - media/laughfuzzball.wav
+  - lib/media/laughfuzzball.wav
 - - "'Why, you stuck-up, half-witted, scruffy-looking nerf herder!' - Leia Organa"
-  - media/nerfherder.wav
+  - lib/media/nerfherder.wav
 - - "'It's a trap!' - Admiral Ackbar"
-  - media/trap.mp3
+  - lib/media/trap.mp3
 - - "'Sir, the possibility of successfully navigating an asteroid field is approximately
     3,720 to 1.' - C-3PO"
   - 

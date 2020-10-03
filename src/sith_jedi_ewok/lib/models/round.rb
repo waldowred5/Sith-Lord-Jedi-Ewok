@@ -1,9 +1,9 @@
 class Round
     @rounds = []
     @round_result_sounds = {
-        "lost" => "#{File.expand_path('../..', __FILE__)}/media/WilhelmScream.wav",
-        "drew" => "#{File.expand_path('../..', __FILE__)}/media/lightsaberclash.mp3",
-        "won!" => "#{File.expand_path('../..', __FILE__)}/media/lightsaberspin.mp3"
+        "lost" => "lib/media/WilhelmScream.wav",
+        "drew" => "lib/media/lightsaberclash.mp3",
+        "won!" => "lib/media/lightsaberspin.mp3"
     }
 
     class << self
