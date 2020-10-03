@@ -23,3 +23,21 @@
   wins: 3
   draws: 0
   score: 300
+- !ruby/object:Game
+  id: 5
+  player_name: a
+  wins: 0
+  draws: 0
+  score: 25
+- !ruby/object:Game
+  id: 6
+  player_name: afefe
+  wins: 0
+  draws: 0
+  score: 25
+- !ruby/object:Game
+  id: 7
+  player_name: adwadw
+  wins: 0
+  draws: 0
+  score: 100

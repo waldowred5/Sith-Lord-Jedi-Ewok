@@ -5,7 +5,7 @@ require 'artii'
 require_relative 'dispatch'
 
 if ARGV.empty?
-    Sound.new('lib/media/blaster-firing.wav').play
+    Sound.new("#{File.expand_path('../..', __FILE__)}/media/blaster-firing.wav").play
     loop do
         system('clear')
         puts "Welcome to...".colorize(:light_yellow)

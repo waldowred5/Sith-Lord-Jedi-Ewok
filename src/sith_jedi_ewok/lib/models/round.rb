@@ -1,9 +1,9 @@
 class Round
     @rounds = []
     @round_result_sounds = {
-        'lost' => 'lib/media/WilhelmScream.wav',
-        'drew' => 'lib/media/lightsaberclash.mp3',
-        'won!' => 'lib/media/lightsaberspin.mp3'
+        "lost" => "#{File.expand_path('../..', __FILE__)}/media/WilhelmScream.wav",
+        "drew" => "#{File.expand_path('../..', __FILE__)}/media/lightsaberclash.mp3",
+        "won!" => "#{File.expand_path('../..', __FILE__)}/media/lightsaberspin.mp3"
     }
 
     class << self
@@ -12,11 +12,11 @@ class Round
         end
 
         def count_wins
-            @rounds.count {|x| x.result == 'won!'}
+            @rounds.count {|x| x.result == "won!"}
         end
 
         def count_draws
-            @rounds.count {|x| x.result == 'drew'}
+            @rounds.count {|x| x.result == "drew"}
         end
 
         def clear_rounds
@@ -50,7 +50,7 @@ class Round
     end
 
     def selections(choice)
-        select_from = ['Sith'.colorize(:light_red), 'Jedi'.colorize(:light_cyan), 'Ewok'.colorize(:light_green)]
+        select_from = ["Sith".colorize(:light_red), "Jedi".colorize(:light_cyan), "Ewok".colorize(:light_green)]
         select_from[choice]
     end
 
@@ -58,11 +58,11 @@ class Round
         math_check = @player_input - @ai_input
         case math_check
         when 0
-            @result = 'drew'
+            @result = "drew"
         when 1, -2
-            @result = 'won!'
+            @result = "won!"
         when -1, 2
-            @result = 'lost'
+            @result = "lost"
         end
     end
 
