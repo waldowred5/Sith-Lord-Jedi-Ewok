@@ -156,12 +156,20 @@ https://trello.com/b/jzbxsG9I/terminal-application
 
 <br>
 
-Installation:
+*NB! The below installation instructions are not currently working. To run the application, download source code from https://github.com/waldowred5/T1A3-Terminal-App, and then run the following command*
+
+`sith_jedi_ewok` in terminal from the following directory:
+
+`/Users/[user_name]/T1A3-Terminal-App/src/sith_jedi_ewok`
+
+<br>
+
+Installation: **< Not Working**
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sith_jedi_ewok'
+gem 'Sith-Lord_Jedi_Ewok'
 ```
 
 And then execute:
@@ -170,7 +178,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install sith_jedi_ewok
+    $ gem install Sith-Lord_Jedi_Ewok
 
 - Dependencies:
   - Rake: v12.0

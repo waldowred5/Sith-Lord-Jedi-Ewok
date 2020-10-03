@@ -23,9 +23,4 @@
   wins: 3
   draws: 0
   score: 300
-- !ruby/object:Game
-  id: 5
-  player_name: ofenqiofiq
-  wins: 0
-  draws: 0
-  score: 0
+

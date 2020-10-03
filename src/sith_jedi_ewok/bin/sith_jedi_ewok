@@ -1,6 +1,4 @@
 #!/usr/bin/env ruby
-$LOAD_PATH.unshift File.join(File.dirname(__FILE__), *%w[.. .. lib])
-
 require "bundler/setup"
 require "sith_jedi_ewok"
 
@@ -13,3 +11,5 @@ require "sith_jedi_ewok"
 
 require "irb"
 IRB.start(__FILE__)
+
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
