@@ -6,7 +6,29 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Daniel Waldow"]
 
   spec.summary       = %q{Sith-Lord, Jedi is a 'Star Wars' themed 'Scissors, Paper, Rock' simulator.}
-  spec.description   = %q{'Sith-Lord, Jedi, Ewok' is a game targeting younger audiences who may not have grown up playing 'Scissors, Paper, Rock', but will also more broadly appeal to fans of the Star Wars franchise.}
+  spec.description   = %q{
+    'Sith-Lord, Jedi, Ewok' is a game targeting younger audiences who may not have grown up playing 'Scissors, Paper, Rock', but will also more broadly appeal to fans of the Star Wars franchise.
+
+    *NB! The gem installation currently contains pathing errors when running the gem. To run the application, download source code from https://github.com/waldowred5/T1A3-Terminal-App, and then run the following command*
+
+    `sith_jedi_ewok` in terminal from the following directory:
+
+    `/Users/[user_name]/T1A3-Terminal-App/src/sith_jedi_ewok`
+
+    To download all dependencies, run `bundle install` in the same directory.
+
+    "If importing to your own application, add this line to your application's Gemfile:"
+
+    `gem 'Sith-Lord_Jedi_Ewok'`
+
+    And then execute:
+
+      $ bundle install
+
+    Or install it yourself as:
+
+      $ gem install Sith-Lord_Jedi_Ewok
+  }
   spec.homepage      = "https://github.com/waldowred5/T1A3-Terminal-App"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")

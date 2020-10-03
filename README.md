@@ -156,17 +156,21 @@ https://trello.com/b/jzbxsG9I/terminal-application
 
 <br>
 
-*NB! The below installation instructions are not currently working. To run the application, download source code from https://github.com/waldowred5/T1A3-Terminal-App, and then run the following command*
+Installation:
+
+To download *'Sith-Lord, Jedi, Ewok'* as a gem, you can find it at RubyGems.org here: https://rubygems.org/gems/Sith-Lord_Jedi_Ewok
+
+*NB! The above installation currently contains pathing errors when running the gem. To run the application, download source code from https://github.com/waldowred5/T1A3-Terminal-App, and then run the following command*
 
 `sith_jedi_ewok` in terminal from the following directory:
 
 `/Users/[user_name]/T1A3-Terminal-App/src/sith_jedi_ewok`
 
+To download all dependencies, run `bundle install` in the same directory.
+
 <br>
 
-Installation: **< Not Working**
-
-Add this line to your application's Gemfile:
+If importing to your own application, add this line to your application's Gemfile:
 
 ```ruby
 gem 'Sith-Lord_Jedi_Ewok'
